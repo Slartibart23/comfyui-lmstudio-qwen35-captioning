@@ -317,7 +317,7 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "load & resize node:\nhttps://github.com/Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02\n\nUsed Vision-LLM:\nhttps://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive\n\nWenn Du ein merkwürdiges Caption erhältst erhöhe die max_tokens"
+        "load & resize node:\nhttps://github.com/Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02\n\nUsed Vision-LLM:\nhttps://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive\n\nWIf you get a strange caption, increase the max_tokens"
       ],
       "color": "#432",
       "bgcolor": "#653"
