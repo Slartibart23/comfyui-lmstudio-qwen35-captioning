@@ -247,6 +247,8 @@
         }
       ],
       "properties": {
+        "aux_id": "Slartibart23/comfyui-lmstudio-qwen35-captioning",
+        "ver": "5775dcfb38d77c432d06cc290332b7b65e7262a7",
         "Node name for S&R": "LMStudioImageCaption"
       },
       "widgets_values": [
@@ -261,7 +263,8 @@
         "off",
         0.3,
         4096,
-        "on"
+        "on",
+        "final_or_reasoning"
       ]
     },
     {
@@ -297,30 +300,8 @@
         "cnr_id": "comfyui-custom-scripts",
         "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
         "Node name for S&R": "ShowText|pysssss"
-      }
-    },
-    {
-      "id": 17,
-      "type": "Note",
-      "pos": [
-        775.7667426331635,
-        -471.27716773821993
-      ],
-      "size": [
-        478.30346779350265,
-        422.3962570397864
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "load & resize node:\nhttps://github.com/Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02\n\nUsed Vision-LLM:\nhttps://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive\n\nWIf you get a strange caption, increase the max_tokens"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+      },
+      "widgets_values": []
     },
     {
       "id": 6,
@@ -334,7 +315,7 @@
         518
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -379,6 +360,29 @@
         "lanczos",
         "image"
       ]
+    },
+    {
+      "id": 17,
+      "type": "Note",
+      "pos": [
+        775.7667426331635,
+        -471.27716773821993
+      ],
+      "size": [
+        478.30346779350265,
+        422.3962570397864
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "load & resize node:\nhttps://github.com/Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02\n\nUsed Vision-LLM:\nhttps://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive\n\nIf you receive a strange caption, increase the max_tokens"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -437,8 +441,8 @@
     "ds": {
       "scale": 0.9193092918621012,
       "offset": [
-        -155.18213029326873,
-        790.7274909827314
+        156.20291717008195,
+        907.948520760965
       ]
     },
     "frontendVersion": "1.42.15",
