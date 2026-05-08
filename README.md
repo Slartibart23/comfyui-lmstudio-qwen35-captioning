@@ -1,4 +1,4 @@
-# ComfyUI LM Studio Qwen 3.5 Captioning
+# ComfyUI LM Studio Qwen 3.5 Captioning (SFW/NSFW)
 
 A ComfyUI custom node and reference workflow for sending images from ComfyUI to a local LM Studio vision model, receiving an English FLUX-style prompt or image caption, and showing/saving the result back inside ComfyUI.
 
