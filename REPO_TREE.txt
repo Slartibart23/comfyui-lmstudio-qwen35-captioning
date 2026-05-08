@@ -1,0 +1,16 @@
+comfyui-lmstudio-qwen35-captioning-direct-clone/
+  .gitignore
+  INSTALL.md
+  LICENSE
+  README.md
+  REPO_TREE.txt
+  __init__.py
+  requirements.txt
+  docs/
+    COMFYUI_WORKFLOW.md
+    LM_STUDIO_SETUP.md
+  prompts/
+    flux_image_to_prompt_template.txt
+    safe_caption_template.txt
+  workflows/
+    QWEN35_LLM_Captioning.json

@@ -1,0 +1,9 @@
+/no_think
+
+Describe the provided image in clear English.
+
+Analyze only what is visible. Do not invent people, actions, or details that are not shown.
+
+Write one concise caption in 1 to 3 sentences.
+
+Return only the caption.

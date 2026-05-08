@@ -1,0 +1,451 @@
+{
+  "id": "4628598d-ea39-4f80-b6e5-a4b0dd83d764",
+  "revision": 0,
+  "last_node_id": 17,
+  "last_link_id": 20,
+  "nodes": [
+    {
+      "id": 11,
+      "type": "Load Image Batch",
+      "pos": [
+        878.5995415319267,
+        55.996475041615895
+      ],
+      "size": [
+        366.8070549394704,
+        345.5103320248413
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            16,
+            17
+          ]
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "pr-was-node-suite-comfyui-47064894",
+        "ver": "9ae952b1b435d2bd846bfe6516919b5a8b9201aa",
+        "Node name for S&R": "Load Image Batch",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "incremental_image",
+        2784,
+        "increment",
+        0,
+        "Batch 10012",
+        "d:\\dataset",
+        "*",
+        "false",
+        "false"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "PreviewImage",
+      "pos": [
+        2043.3255409923772,
+        -264.94222496450215
+      ],
+      "size": [
+        465.5343182995957,
+        477.86100922862653
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12,
+      "type": "easy saveText",
+      "pos": [
+        2076.163497516707,
+        285.8775972610414
+      ],
+      "size": [
+        270,
+        150
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 18
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "file_name",
+          "type": "STRING",
+          "widget": {
+            "name": "file_name"
+          },
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.1",
+        "Node name for S&R": "easy saveText",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        },
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "d:\\dataset",
+        "",
+        "txt",
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 8,
+      "type": "easy positive",
+      "pos": [
+        1359.1475323026823,
+        -482.4565678464864
+      ],
+      "size": [
+        557.7311986918935,
+        470.5130920570815
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7c470c67d6df44498e52c902173c1ac77cd5bdfd",
+        "Node name for S&R": "easy positive",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "You are an expert image-to-prompt assistant for the FLUX image generation model.\n\nAnalyze only the visible nsfw image. Do not invent characters, names, actions, nudity, sexual content, violence, bdsm elements or details that are not clearly visible. Do not mention feckles or skin blemishes.\n\nName the main character J4n3 (not Jane). J4n3 has straight blonde hair.\n\nLuc4 is wearing a gagfunnel in her mouth. (describe the material, the color and the size of the gagfunnel).\n\nWrite one clean English FLUX prompt in simple descriptive language.\n\nDescribe:\n- main subject\n- appearance (hairstyle etc.)\n- clothing\n- excact pose (arms, hands, legs, head)\n- facial expression\n- action of the characters\n- environment\n- composition\n- lighting\n- colors\n- camera angle\n- visual style\n\nIf a white fluid is visible name it \"white transluent cum\". If her nude breasts are visible name the \"small breasts\".\n\nReturn only the final prompt. No analysis. No bullet points. No explanation.\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "LMStudioImageCaption",
+      "pos": [
+        1366.3298638846231,
+        73.95470907423226
+      ],
+      "size": [
+        400,
+        376
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 16
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            18,
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LMStudioImageCaption"
+      },
+      "widgets_values": [
+        "http://127.0.0.1:1234/v1/chat/completions",
+        "qwen3.5-35b-a3b-uncensored-hauhaucs-aggressive",
+        "",
+        "no_think",
+        "data_uri_jpeg",
+        "fixed",
+        562057701,
+        "increment",
+        "off",
+        0.3,
+        4096,
+        "on"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2533.2686853134924,
+        -256.41077811948173
+      ],
+      "size": [
+        557.60911511219,
+        453.6477018522252
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss"
+      }
+    },
+    {
+      "id": 17,
+      "type": "Note",
+      "pos": [
+        775.7667426331635,
+        -471.27716773821993
+      ],
+      "size": [
+        478.30346779350265,
+        422.3962570397864
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "load & resize node:\nhttps://github.com/Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02\n\nUsed Vision-LLM:\nhttps://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 6,
+      "type": "LoadAndResizeImageWithFilename",
+      "pos": [
+        478.69203554064967,
+        45.644629807342234
+      ],
+      "size": [
+        314.6164154052734,
+        518
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Slartibart23/ComfyUI-LoadResizeImageWithFilenameV02",
+        "ver": "b17de3e27d9b34bd294f26407de98f6ca4cf299d",
+        "Node name for S&R": "LoadAndResizeImageWithFilename"
+      },
+      "widgets_values": [
+        "0.jpg",
+        true,
+        1536,
+        1536,
+        true,
+        2,
+        "lanczos",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      8,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      12,
+      11,
+      1,
+      12,
+      2,
+      "STRING"
+    ],
+    [
+      16,
+      11,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      11,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      7,
+      0,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      7,
+      0,
+      16,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9193092918621012,
+      "offset": [
+        -155.18213029326873,
+        790.7274909827314
+      ]
+    },
+    "frontendVersion": "1.42.15",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
