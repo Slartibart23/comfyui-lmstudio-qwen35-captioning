@@ -6,20 +6,6 @@ A ComfyUI custom node and reference workflow for sending images from ComfyUI to 
 
 This repository is structured so it can be cloned directly into `ComfyUI/custom_nodes`.
 
-Correct direct-clone path:
-
-```text
-ComfyUI/custom_nodes/comfyui-lmstudio-qwen35-captioning/__init__.py
-```
-
-Do **not** use a nested direct-clone path such as:
-
-```text
-ComfyUI/custom_nodes/comfyui-lmstudio-qwen35-captioning/custom_nodes/ComfyUI_LMStudioCaption/__init__.py
-```
-
-The nested copy is only kept for manual-copy installation.
-
 ## Recommended model
 
 Recommended model for this workflow:
